@@ -7,10 +7,13 @@ name = "pypi"
 fastapi = {extras = ["standard"], version = "*"}
 
 [dev-packages]
+pytest = "*"
+httpx2 = "*"
 
 [requires]
 python_version = "3.14"
 
 [scripts]
 start = "uvicorn src.app:app --reload"
-
+unit = "pytest tests/unit -v"
+integration = "pytest tests/integration -v"
