@@ -4,9 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-fastapi = "*"
+fastapi = {extras = ["standard"], version = "*"}
 
 [dev-packages]
 
 [requires]
 python_version = "3.14"
+
+[scripts]
+start = "uvicorn src.app:app --reload"
+
