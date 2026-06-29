@@ -1,0 +1,9 @@
+.git
+.gitignore
+.github
+tests
+pytest.ini
+ruff.toml
+Dockerfile
+.dockerignore
+README.md
